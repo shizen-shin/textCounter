@@ -14,23 +14,34 @@
 
         <div id="oneline">
             <p id="text">入力文字数：<span id="textCount">0</span></p>
-            <p id="maxText">(最大文字数：<span id="max">10</span>)</p>
+            <p id="maxText">(最大文字数：<span id="limit">AAA</span>)</p>
         </div>
 
             <p id="red">残り文字数：<span id="remain">0</span><span id="alertText"></span></p>
     </div>
-
+    <br>
     <div id="fix">
-        <p>&lt;入力内容の確認&gt;</p>
+        <p>&lt;入力内容&gt;</p>
         <div id="btn">
             <input type="button" value="fix" id="fixbtn">
             <input type="button" value ="clear" id="clearbtn">
         </div>
         <p id="output"></p>
     </div>
+    <br>
+    <br>
+    <div id="setMax" class="config">
+        <p>&lt;Confing&gt;<br>最大文字数設定</p>
+        <select id="selected" class="config">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+        </select>
+        <input type="button" value="fix" id="maxbtn" class="config">
+    </div>
 
     <script src="main.js"></script>
-    
+
 
 </body>
 </html>
