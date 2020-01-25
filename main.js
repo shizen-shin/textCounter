@@ -21,20 +21,45 @@
         remainText.innerText = maxText - str.length; 
 
         var redText = document.getElementById('red')
-        if(str.length <= 10){
+        if(str.length <= maxText){
             redText.style.color = "black";
         } else {
             redText.style.color = "red";
         }
 
-        //alert
+        //alertText
+        var alertText = document.getElementById('alertText');
         if(str.length > maxText){
-            var alert = document.getElementById('alert');
-            alert.innerText = "　*文字数が超過しています";
-            alert.style.color = "red";
+            alertText.innerText = "　*文字数が超過しています";
+            alertText.style.color = "red";
+        } else{
+            alertText.innerText = "";
         }
 
+        //fixボタン
+            var output = document.getElementById('output');
+
+            fixbtn.addEventListener('click', function(){
+                output.innerText = "";
+                if(str.length > maxText){ 
+                    output.innerText = "文字数が超過しています。内容を確認しfixボタンを押してください";
+                    output.style.color = "red";
+                }else{
+                    output.innerText = str;
+                    output.style.color = "black";
+            }
+            })
+
+        //clearボタン
+           clearbtn.addEventListener('click', function(){
+             output.innerText = "";
+             elem.value = "";
+           })
+
+           console.log(str);
+    console.log(output.innerText);
 
     })
 
+    
 })();
