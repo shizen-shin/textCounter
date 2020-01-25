@@ -9,8 +9,17 @@
 </head>
 <body>
     <h1>Text Counter</h1>
-    <textarea name="" id="" cols="50" rows="10"></textarea>
-    <p><span id="textCount">0</span>文字</p>
+    <div id="textArea">
+        <textarea name="" id="inputText" cols="50" rows="10"></textarea>
+
+        <div id="oneline">
+            <p id="text">入力文字数：<span id="textCount">0</span></p>
+            <p id="maxText">(最大文字数：<span id="max">10</span>)</p>
+        </div>
+
+            <p id="red">残り文字数：<span id="remain">0</span><span id="alert"></span></p>
+    </div>
+
 
     <script src="main.js"></script>
     
