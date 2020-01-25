@@ -1,0 +1,24 @@
+#inputText{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#text{
+    display: inline-block;
+}
+
+#maxText{
+    display: inline-block;
+    font-size: 0.8em;
+    margin:0 0 3px 10px;
+    color:gray;
+
+}
+
+#red{
+    margin:0;
+}
+
+#alert{
+    font-size: 0.85em;
+}
