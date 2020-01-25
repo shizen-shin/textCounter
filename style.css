@@ -40,12 +40,33 @@
 }
 
 .config{
-    color:gray;
-    background-color: whitesmoke;
+    color:white;
+    background-color: rgba(128, 128, 128, 0.288);
     margin:0;
 }
 
 #setMax{
     max-width: 150px;
     font-size: 0.8em;
+    border: rgba(0, 0, 0, 0.37) double;
+    padding:2px;
+}
+
+#setMax > p{
+    margin:0;
+}
+
+#features{
+    max-width: 685px;
+    background-color:rgb(243, 243, 243);
+    padding: 2px 0 2px 10px;
+    color:gray;
+}
+
+#features > p{
+    text-decoration: underline;
+}
+
+#features > ul > li{
+    font-size: 0.9em;
 }
